@@ -9,6 +9,7 @@
         </div>
       </div>
       <div class="header-right">
+        <router-link to="/items" class="link">Товары</router-link>
         <router-link to="/reports" class="link">Отчёты</router-link>
         <router-link to="/register" class="link"
           >Зарегистрироваться</router-link

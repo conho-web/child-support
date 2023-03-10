@@ -9,6 +9,7 @@ export default createStore({
     succesRegister: false,
     errors: false,
     docs: null,
+    items: null,
   },
   getters: {
     getDataForRegister: (state) => {
@@ -25,6 +26,9 @@ export default createStore({
     },
     getDocs(state) {
       return state.docs;
+    },
+    getItems(state) {
+      return state.items;
     },
   },
   mutations: {
@@ -47,6 +51,9 @@ export default createStore({
     },
     setDocs(state, value) {
       state.docs = value;
+    },
+    setItems(state, value) {
+      state.items = value;
     },
     accessDecode(state, token) {
       let base64Url = token.split(".")[1];
