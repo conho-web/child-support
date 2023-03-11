@@ -117,41 +117,13 @@
         Особая жизнь»
       </p>
     </div>
-
-    <div class="block block-f">
-      <h1 class="title-secondary">Контакты</h1>
-
-      <div class="footer">
-        <div class="block">
-          <h2 class="title-secondary">
-            Председатели ОО помощи детям с особенностями развития и их семьям
-            «Особое детство»
-          </h2>
-          <p class="text">Пашкевич Оксана Николаевна 8-0162-53-07-75</p>
-          <p class="text">
-            Заместитель председателя Пашкевич Елена Александровна
-          </p>
-          <p class="text">
-            Директор УПП Учебно-ремесленный центр» «Особая жизнь» Пашкевич
-            Оксана Николаевна +375 29 529-15-56 мтс
-          </p>
-        </div>
-        <div class="block">
-          <h2 class="title-secondary">
-            Мастера УПП Учебно-ремесленный центр» "Особая жизни":
-          </h2>
-          <p class="text">
-            Пашкевич Елена Александровна +375333236614 (заместитель директора);
-          </p>
-          <p class="text">Сапон Людмила Васильевна +375298216084 (технолог);</p>
-        </div>
-      </div>
-    </div>
   </div>
+  <Footer />
 </template>
 
 <script>
 import store from "@/store";
+import Footer from "@/components/Footer.vue";
 
 export default {
   data() {
@@ -167,6 +139,9 @@ export default {
         store.dispatch("updateAccess");
       }
     }, 1000);
+  },
+  components: {
+    Footer,
   },
 };
 </script>
