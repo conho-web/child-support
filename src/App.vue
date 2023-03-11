@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   font-family: Arial;
+  margin: 0;
 }
 
 .error {
@@ -18,8 +19,8 @@ input {
   background: #b5dfff;
   padding: 1rem 2rem;
   border-radius: 30px;
-  border: none;
-  margin: 1rem 0;
+  border: 1px solid black;
+  margin: 0.5rem 0;
 }
 
 button {

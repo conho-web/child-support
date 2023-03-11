@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div class="wrapp">
-      <p class="title">Название</p>
-      <p class="title">Дата создания</p>
-    </div>
+    <h1>Документы</h1>
     <div v-for="elem in getDocs" :key="elem" class="doc">
-      <a :href="elem.file" target="_blank">{{ elem.remark }}</a>
+      <p class="title">{{ elem.remark }}</p>
       <p>{{ elem.uploaded_at.split("T")[0] }}</p>
+      <a :href="elem.file" class="download">Скачать</a>
     </div>
   </div>
 
@@ -39,19 +37,29 @@ export default {
 </script>
 
 <style scoped>
-.wrapp {
-  display: grid;
-  grid-template-columns: 50% 30% 30%;
+.title {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .doc {
-  display: grid;
-  grid-template-columns: 50% 30% 30%;
+  border-radius: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
   margin: 1rem 0;
 }
 
-.title {
-  font-size: 28px;
+.download {
+  text-decoration: none;
+  padding: 14px 30px;
+  background: #47ea68;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 1rem 0 0 0;
+  color: white;
 }
 
 p {

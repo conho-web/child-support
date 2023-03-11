@@ -124,11 +124,11 @@ img {
 
 .title-secondary {
   color: #699681;
-  margin: 6rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .text {
-  line-height: 170%;
+  line-height: 80%;
 }
 
 @media screen and (max-width: 1440px) {
